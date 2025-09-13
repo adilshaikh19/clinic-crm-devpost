@@ -1,5 +1,8 @@
 # Clinic ERP System
 
+DEMO link: https://cliniprac.binarylabs.site/
+Note: It's hosted on free tier, so it may take 10, 20 seconds to load, so please wait
+
 A comprehensive multi-tenant web application for managing clinic operations including user management, patient records, appointments, and prescriptions.
 
 ## Latest Updates (v1.4.16)
@@ -831,7 +834,7 @@ The frontend API service (`frontend/src/services/api.js`) is configured with:
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd clinic-erp-system
+   cd clinic-crm-devpost
    ```
 
 2. **Backend Setup**
