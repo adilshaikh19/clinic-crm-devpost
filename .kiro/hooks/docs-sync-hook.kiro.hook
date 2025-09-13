@@ -1,0 +1,31 @@
+{
+  "enabled": true,
+  "name": "Documentation Sync",
+  "description": "Monitors all source files in the repository and triggers documentation updates in README or docs folder when changes are detected",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "backend/src/**/*.js",
+      "frontend/src/**/*.js",
+      "backend/src/**/*.ts",
+      "frontend/src/**/*.ts",
+      "*.py",
+      "*.java",
+      "*.cpp",
+      "*.c",
+      "*.go",
+      "*.rs",
+      "*.php",
+      "*.rb",
+      "package.json",
+      "backend/package.json",
+      "frontend/package.json",
+      "tailwind.config.js"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Source code files have been modified. Please review the changes and update the documentation accordingly. If there is a README.md file, update it to reflect any new features, API changes, or architectural modifications. If there is a /docs folder, update the relevant documentation files there as well. Focus on keeping the documentation accurate and up-to-date with the current codebase, including any new components, functions, endpoints, or configuration changes."
+  }
+}
